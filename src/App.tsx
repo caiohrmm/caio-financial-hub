@@ -10,6 +10,7 @@ import { AppLayout } from "@/layouts/AppLayout";
 
 import Dashboard from "@/pages/Dashboard";
 import Transactions from "@/pages/Transactions";
+import Categories from "@/pages/Categories";
 import Reports from "@/pages/Reports";
 import Settings from "@/pages/Settings";
 import NotFound from "@/pages/NotFound";
@@ -28,6 +29,7 @@ const App = () => (
               <Routes>
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/transactions" element={<Transactions />} />
+                <Route path="/categories" element={<Categories />} />
                 <Route path="/reports" element={<Reports />} />
                 <Route path="/settings" element={<Settings />} />
                 <Route path="*" element={<NotFound />} />
